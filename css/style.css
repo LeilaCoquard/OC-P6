@@ -1,0 +1,153 @@
+body {
+    font-family: "Courier";
+}
+
+.rules {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 900px;
+}
+
+.popup {
+    visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 40%;
+    margin-left: -80px;
+}
+
+.rules .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    margin: 10px auto;
+    max-width: 900px;
+    height: 600px;
+    background-color: seagreen;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 5px;
+    font-size: 2em;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    height: 500px;
+    width: 500px;
+}
+
+.available {
+    background-color: linen;
+    border: solid black 1px;
+    height: 50px;
+    width: 50px;
+}
+
+.wall {
+    background-color: black;
+    border: solid black 1px;
+    height: 50px;
+    width: 50px;
+}
+
+#player1,
+#player2,
+#weapon0,
+#weapon1,
+#weapon2,
+#weapon3 {
+    height: 100%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#divRight {
+    max-width: 350px;
+    min-width: 100px;
+    margin: 10px;
+}
+
+p {
+    text-align: center;
+    margin: 0.4rem auto;
+}
+
+span {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#player1dash,
+#player2dash,
+#player1weapon0dash,
+#player2weapon0dash,
+#player1weapon1dash,
+#player2weapon1dash,
+#player1weapon2dash,
+#player2weapon2dash,
+#player1weapon3dash,
+#player2weapon3dash,
+#player1pointsdash,
+#player2pointsdash {
+    height: 80px;
+    width: auto;
+}
+
+#gameTurn {
+    height: 60px;
+    background-color: linen;
+    margin: 2em auto;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1em;
+}
+
+#instructions {
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    padding: auto 1em;
+    font-style: italic;
+}
+
+.restart {
+    visibility: hidden;
+}

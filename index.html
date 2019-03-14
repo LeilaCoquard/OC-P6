@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projet 6 - Jeu de plateau</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jeu de plateau - Projet 6</h1>
+        <div class="rules">
+            <p>Règles du jeu</p>
+            <div class="popup" id="rulesDetail">
+                <p>Pour changer de baguette : arrêtez vous sur la case de la baguette</p>
+                <p>Pour combattre : positionnez vous à côté de votre adversaire</p>
+                <p>Bonne chance !</p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="board" class="grid col-7">
+                <!--Board Game-->
+            </div>
+            <div id="divRight" class="col-5">
+                <p>Combat :</p>
+                <p> Harry Potter contre la Fée Clochette</p>
+                <div class="row player1">
+                    <div class="col-4"><img src="./images/HP.png" id="player1dash"></div>
+                    <!-- Dashboard player 1 -->
+                </div>
+                <br>
+                <div class="row player2">
+                    <div class="col-4"><img src="./images/fee-clochette.png" id="player2dash"></div>
+                    <!-- Dashboard player 2 -->
+                </div>
+                <div id="gameTurn">
+                    <button class="start">Démarrer</button>
+                    <p class="playerPlay"></p>
+                    <button class="restart">Rejouer</button>
+                </div>
+                <div id="instructions">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
